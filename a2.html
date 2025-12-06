@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lets find the largest number</p>
+    <p id="answer"></p>
+    <script>
+        function maxfun(){
+            var max=0
+            for(var i=0;i<arguments.length;i++){
+                if(arguments[i]>max){
+                    max=arguments[i]
+                }
+            }
+            return max
+        }
+        document.getElementById("answer").innerHTML=maxfun(34,25,12,56,23,11,36)
+    </script>
+</body>
+</html>
